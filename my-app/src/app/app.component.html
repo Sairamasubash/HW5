@@ -1,0 +1,3 @@
+<h1 [style.color]="titleColor">The Color Of The Title Is Changing</h1>
+
+<app-section *ngFor="let section of sections" [title]="section.title" [body]="section.body" [color]="section.color" (newColor)="titleColorChange($event)"></app-section>
